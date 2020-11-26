@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 100vh;
+}
+.home_header{
+    background: linear-gradient(to right, #00000011, #0000000a),  url(images/header_background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navbar{
+    background-color: #0000007c;
+}
+.navbar-brand{
+    font-family: 'Sansita Swashed', cursive;
+}
+.navbar-brand, .nav-link{
+    font-size: 1.2rem;
+    font-weight: 600;
+    
+}
+.nav-link{
+    color: #fff !important;
+}
+.active > a{
+    color: #ff9642 !important;
+}
+.active > span {
+    width: 100% !important;
+}
+.nav-item:hover {
+    color: #ff9642 !important;
+}
+.nav-item:hover > span{
+    width: 100%;
+    right: 0;
+}
+.nav-item{
+    margin: 0 1rem;
+    transition: 0.4s;
+    position: relative;
+    
+}
+.nav-item > span{
+    position: absolute;
+    height: 2px;
+    background: #ff9642;
+    left: 0 ;
+    transition: 0.3s ease-in-out ;
+    width: 0;
+    display: block;
+}
+.navbar-brand span{
+    color: #ff9642;
+}
+.promo-title{
+    font-family: 'Sansita Swashed', cursive;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    margin-top: 2rem !important;
+    font-size: 3rem;
+}
+.promo-title > span{
+    color: #ff9642;
+    margin-left: -10px;
+}
+.centering{
+    margin-top: 25% !important;
+    margin: auto;
+    width: 270px;
+}
+.enter{
+    color: #ff9642 !important;
+    padding: 0.75rem 6rem;
+    margin: auto;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #00000000;
+    border: 2px solid #ff9642;
+    border-radius: 50px;
+    text-decoration: none !important;
+}
+
+.enter > .fa{
+    transition: all 0.4s ease-in-out;
+}
+.enter:hover > .fa{
+    transform: translate(20px, 0);
+}
+
+
+/* library */
+.library{ 
+    background: linear-gradient(to right, #00000049, #00000033), url(images/library_background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat;
+}
+.books {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto !important;
+    width: 65% !important;
+}
+.card{
+    text-align: left;
+    
+}
+.card a{
+   color: #ff9642 !important;
+   text-decoration: none;
+}
+.card .card-title{
+    text-transform: uppercase;
+    font-family: ;
+}
+
+
+/* about */
+.about{ 
+    background: linear-gradient(to right, #00000085, #00000069), url(images/about.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat;
+}
+.about-title, .adress-title {
+    color: #ff9642;
+}
+.about-text, .adress-text{
+    color: #fff;
+    font-size: 18px;
+}
+/* contact */
+.contact a{
+    font-size: 25px;
+    margin-bottom: 1rem;
+    color: #fff !important;
+}
+@media (max-width: 600px) {
+    .about-title, .adress-title{
+        font-size: 30px !important;
+    }
+    .centering{
+        margin-top: 80% !important;
+    }
+    .card-deck{
+        flex-wrap: wrap !important;
+    }
+}
+@media (max-width: 900px) {
+    .card-deck{
+        flex-wrap: wrap !important;
+        flex-direction: column !important;
+    }
+}
