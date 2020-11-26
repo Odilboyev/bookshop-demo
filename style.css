@@ -113,7 +113,7 @@ header{
 }
 .card{
     text-align: left;
-    
+    transition: all 0.3s ease-in;
 }
 .card a{
    color: #ff9642 !important;
@@ -121,17 +121,27 @@ header{
 }
 .card .card-title{
     text-transform: uppercase;
-    font-family: ;
+    font-family: sans-serif;
+}
+.card:hover{
+    transform: translate(0, -5px);
+}
+
+.carousel-item{
+    
+    padding-top: 1rem;
 }
 
 
 /* about */
 .about{ 
-    background: linear-gradient(to right, #00000085, #00000069), url(images/about.jpg);
+    background: linear-gradient(to right, #000000b2, #00000094), url(images/about.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed !important;
     background-repeat: no-repeat;
+    height: 100%;
+    padding-bottom: 1rem;
 }
 .about-title, .adress-title {
     color: #ff9642;
@@ -140,10 +150,27 @@ header{
     color: #fff;
     font-size: 18px;
 }
+
+.logo-anim{
+    margin:  auto ;
+    margin-top: 5rem !important;
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+
+}
+@keyframes up-down {
+    0% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  
+
 /* contact */
 .contact a{
     font-size: 25px;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     color: #fff !important;
 }
 @media (max-width: 600px) {
@@ -156,10 +183,19 @@ header{
     .card-deck{
         flex-wrap: wrap !important;
     }
+
+    .library{
+        height: 100%;
+    }
+    
 }
 @media (max-width: 900px) {
     .card-deck{
         flex-wrap: wrap !important;
         flex-direction: column !important;
+    }
+    .about{
+        height: 100%;
+        padding-bottom: 2rem;
     }
 }
