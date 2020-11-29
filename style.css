@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 header{
     height: 100vh;
 }
@@ -103,17 +104,16 @@ header{
     background-position: center;
     background-attachment: fixed !important;
     background-repeat: no-repeat;
+    height: 100%;
 }
-.books {
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin: auto !important;
-    width: 65% !important;
+
+.card-deck{
+    padding-bottom: 10px;
 }
 .card{
     text-align: left;
     transition: all 0.3s ease-in;
+   
 }
 .card a{
    color: #ff9642 !important;
@@ -123,14 +123,10 @@ header{
     text-transform: uppercase;
     font-family: sans-serif;
 }
-.card:hover{
-    transform: translate(0, -5px);
-}
 
-.carousel-item{
-    
-    padding-top: 1rem;
-}
+
+/* tashil rang #04B704 */
+
 
 
 /* about */
@@ -140,8 +136,8 @@ header{
     background-position: center;
     background-attachment: fixed !important;
     background-repeat: no-repeat;
-    height: 100%;
-    padding-bottom: 1rem;
+    
+    
 }
 .about-title, .adress-title {
     color: #ff9642;
@@ -168,7 +164,16 @@ header{
   
 
 /* contact */
-.contact a{
+.contact{
+    background: linear-gradient(to right, #000000b2, #00000094), url(images/about.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat;
+    
+    
+}
+.contact-us a{
     font-size: 25px;
     margin-bottom: 2rem;
     color: #fff !important;
