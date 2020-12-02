@@ -106,24 +106,43 @@ header{
     background-repeat: no-repeat;
     height: 100%;
 }
+.btn-orange{
+    border:  2px solid #ff9642 !important;
+    border-radius: 4px;
+    padding: 0.60rem 0.7rem ;
+    background-color: #fff;
+    outline: none !important;
+    color: #ff9642;
+}
 
 .card-deck{
     padding-bottom: 10px;
 }
 .card{
     text-align: left;
-    transition: all 0.3s ease-in;
    
+
 }
 .card a{
    color: #ff9642 !important;
    text-decoration: none;
 }
-.card .card-title{
+.books_name{
     text-transform: uppercase;
     font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #191919;
 }
-
+.modal-footer a{
+    text-decoration: none;
+    color: #ff9642 !important;
+}
+.li {
+    background-color: #ffffff00 !important;
+    border: none !important;
+    padding: 0;
+}
 
 /* tashil rang #04B704 */
 
