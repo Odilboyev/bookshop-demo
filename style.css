@@ -215,9 +215,6 @@ header{
         flex-wrap: wrap !important;
     }
 
-    .library{
-        height: 100%;
-    }
     
 }
 @media (max-width: 900px) {
