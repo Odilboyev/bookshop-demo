@@ -6,6 +6,14 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff9642; 
+    
+}
 header{
     height: 100vh;
 }
@@ -227,3 +235,5 @@ header{
         padding-bottom: 2rem;
     }
 }
+
+
