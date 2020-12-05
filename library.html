@@ -25,6 +25,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     
@@ -106,10 +107,14 @@
   
   <!-- TEMPLATE  -->
   
-  <template class="js-pokemon__template">
-    <li class="books_library li list-group-item p-2 mb-3 mx-4 rounded-sm">
-      <div class="card-deck">
-      <div class="card" style="width: 19rem;">
+  <template class="js-pokemon__template" >
+    <li class="books_library li list-group-item p-2 mb-3 mx-4 rounded-sm"  
+    data-aos="fade-up"
+    data-aos-delay="50"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true">
+      <div class="card-deck" >
+      <div class="card"  style="width: 19rem;">
         <div class=" align-items-center bg-info">
           <img class="books_img w-100 rounded-sm" src="" >
         </div>
@@ -144,6 +149,10 @@
     </div>
   </footer>
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
     <!-- my js -->
       <script src="books.js"></script>
